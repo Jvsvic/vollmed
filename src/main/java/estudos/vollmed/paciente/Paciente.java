@@ -1,6 +1,7 @@
-package estudos.vollmed.medicodto;
+package estudos.vollmed.paciente;
 
 import estudos.vollmed.enderecomedico.Endereco;
+import estudos.vollmed.medicodto.DadosAtualizacaoMedico;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -8,53 +9,44 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Table(name = "medicos")
-@Entity(name = "medicos")
+@Table(name = "pacientes")
+@Entity(name = "pacientes")
 
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Medico {
+public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
     private String email;
     private String telefone;
-    private String crm;
-
-    @Enumerated(EnumType.STRING)
-    private Especialidade especialidade;
 
     @Embedded
     private Endereco endereco;
 
     private boolean ativo;
 
-    public Medico(DadosCadastroMedico dados) {
-        this.ativo = true;
+    public Paciente(DadosCadastroPaciente dados) {
         this.nome = dados.nome();
         this.email = dados.email();
-        this.telefone = dados.telefone();
-        this.crm = dados.crm();
-        this.especialidade = dados.especialidade();
-        this.endereco = new Endereco(dados.endereco());
+        this.endereco = new Endereco(dados.endereco()); // Assumindo que Endereco tem um construtor parecido
     }
 
-    public void atualizarInformacoes(@Valid DadosAtualizacaoMedico dados) {
+    public void atualizarInformacoes(@Valid DadosAtualizacaoPaciente dados) {
         if(dados.nome() != null){
             this.nome = dados.nome();
         }
         if (dados.telefone() != null){
             this.telefone = dados.telefone();
         }
-        if (dados.endereco() != null){
-            this.endereco.atualizarInformacoes(dados.endereco());
+        if (dados.email() != null){
+            this.email = dados.email();
         }
-
-
     }
+
 
     public void excluir() {
         this.ativo = false;
