@@ -1,6 +1,5 @@
-package estudos.vollmed.paciente;
+package estudos.vollmed.domain.paciente;
 
-import estudos.vollmed.enderecomedico.DadosEndereco;
 import jakarta.validation.constraints.NotNull;
 
 public record DadosAtualizacaoPaciente(

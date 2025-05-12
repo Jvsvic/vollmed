@@ -1,4 +1,4 @@
-package estudos.vollmed.paciente;
+package estudos.vollmed.domain.paciente;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,6 @@
-package estudos.vollmed.medicodto;
+package estudos.vollmed.domain.medicodto;
 
-import estudos.vollmed.enderecomedico.DadosEndereco;
+import estudos.vollmed.domain.enderecomedico.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

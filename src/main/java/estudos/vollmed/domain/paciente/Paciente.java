@@ -1,7 +1,6 @@
-package estudos.vollmed.paciente;
+package estudos.vollmed.domain.paciente;
 
-import estudos.vollmed.enderecomedico.Endereco;
-import estudos.vollmed.medicodto.DadosAtualizacaoMedico;
+import estudos.vollmed.domain.enderecomedico.Endereco;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;

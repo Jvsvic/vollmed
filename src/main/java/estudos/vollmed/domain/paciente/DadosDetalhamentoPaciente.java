@@ -1,6 +1,6 @@
-package estudos.vollmed.paciente;
+package estudos.vollmed.domain.paciente;
 
-import estudos.vollmed.enderecomedico.Endereco;
+import estudos.vollmed.domain.enderecomedico.Endereco;
 
 public record DadosDetalhamentoPaciente(
         Long id,

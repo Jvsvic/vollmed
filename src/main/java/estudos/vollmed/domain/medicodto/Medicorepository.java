@@ -1,6 +1,5 @@
-package estudos.vollmed.medicodto;
+package estudos.vollmed.domain.medicodto;
 
-import aj.org.objectweb.asm.commons.Remapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

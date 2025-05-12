@@ -1,6 +1,6 @@
 package estudos.vollmed.controller;
 
-import estudos.vollmed.medicodto.*;
+import estudos.vollmed.domain.medicodto.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

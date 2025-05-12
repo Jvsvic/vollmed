@@ -1,4 +1,4 @@
-package estudos.vollmed.enderecomedico;
+package estudos.vollmed.domain.enderecomedico;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

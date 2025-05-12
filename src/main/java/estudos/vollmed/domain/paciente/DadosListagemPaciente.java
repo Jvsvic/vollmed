@@ -1,4 +1,4 @@
-package estudos.vollmed.paciente;
+package estudos.vollmed.domain.paciente;
 
 public record DadosListagemPaciente(
         Long id,

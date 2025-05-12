@@ -1,6 +1,6 @@
 package estudos.vollmed.controller;
 
-import estudos.vollmed.paciente.*;
+import estudos.vollmed.domain.paciente.*;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;

@@ -1,4 +1,4 @@
-package estudos.vollmed.medicodto;
+package estudos.vollmed.domain.medicodto;
 
 public record DadosListagemMedico(
         Long id,
